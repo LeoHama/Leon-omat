@@ -1,7 +1,8 @@
 {
     "name": "Compact Inventory Overview",
     "summary": "Smaller inventory overview cards without dashboard charts",
-    "version": "19.0.1.0.1",
+    "version": "19.0.1.0.2",
+    "author": "Devoca Oy",
     "category": "Inventory/Inventory",
     "license": "LGPL-3",
     "depends": ["stock"],

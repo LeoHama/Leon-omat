@@ -1,6 +1,10 @@
 Varaston tiivis yleiskatsaus – Odoo 19
 ====================================
 
+Tekijä: Devoca Oy
+
+Versio 19.0.1.0.2 lisää moduulin tekijätiedon Odoon moduulitietoihin.
+
 Moduuli pienentää Varasto > Yleiskatsaus -näkymän kortteja:
 
 * Pylväskaaviot piilotetaan. Näkymän tarvitsema kaaviotieto ladataan edelleen.
