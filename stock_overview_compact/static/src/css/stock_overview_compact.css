@@ -1,0 +1,83 @@
+/* Scoped to the inherited inventory overview; other kanban views are unchanged. */
+.o_stock_overview_compact .o_kanban_renderer {
+    --KanbanRecord-width: 360px;
+    --KanbanGroup-width: 380px;
+    --KanbanRecord-padding-v: 10px;
+    --KanbanRecord-padding-h: 10px;
+}
+
+.o_stock_overview_compact .o_kanban_renderer .o_kanban_record {
+    min-height: 0;
+}
+
+.o_stock_overview_compact [name="stock_picking"] {
+    padding-inline: 0 !important;
+}
+
+.o_stock_overview_compact [name="stock_picking"] .fs-4 {
+    font-size: 1rem !important;
+}
+
+.o_stock_overview_compact .o_stock_compact_actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 8px;
+    margin: 8px 0 0 !important;
+    align-items: start;
+}
+
+.o_stock_overview_compact .o_stock_compact_actions > .col-6 {
+    width: auto;
+    padding: 0;
+    min-width: 0;
+}
+
+.o_stock_overview_compact .o_stock_compact_actions .btn {
+    padding: 4px 8px;
+    white-space: normal;
+    max-width: 100%;
+}
+
+/* Stock reserves 5.5rem even when no counters are visible. */
+.o_stock_overview_compact .stock-overview-links {
+    height: auto;
+}
+
+.o_stock_overview_compact .stock-overview-links > .row {
+    margin: 0;
+}
+
+.o_stock_overview_compact .stock-overview-links > .row > a {
+    width: 100%;
+    margin-inline-start: 0;
+    padding: 0;
+    white-space: normal;
+    overflow: visible;
+}
+
+.o_stock_overview_compact .stock-overview-links > .row > a > .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    margin: 0;
+}
+
+.o_stock_overview_compact .stock-overview-links a .col-6 {
+    flex: 1 1 0;
+    width: auto;
+    padding: 0;
+    min-width: 0;
+}
+
+.o_stock_overview_compact .stock-overview-links a .col-2 {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 575.98px) {
+    .o_stock_overview_compact .o_stock_compact_actions {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

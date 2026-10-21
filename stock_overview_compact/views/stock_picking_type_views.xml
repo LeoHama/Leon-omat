@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_type_kanban_compact" model="ir.ui.view">
+        <field name="name">stock.picking.type.kanban.compact</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.stock_picking_type_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban" position="attributes">
+                <attribute name="class" add="o_stock_overview_compact" separator=" "/>
+            </xpath>
+            <!-- The stock dashboard renderer calls .includes() on this value.
+                 Keep it in the loaded fields even without the chart widget. -->
+            <xpath expr="//kanban/field[@name='color']" position="before">
+                <field name="kanban_dashboard_graph"/>
+            </xpath>
+            <!-- Remove only the visible widget, not its data dependency. -->
+            <xpath expr="//t[@t-name='card']//field[@name='kanban_dashboard_graph']" position="replace"/>
+            <xpath expr="//div[@name='stock_picking']/div[contains(@class, 'row')]" position="attributes">
+                <attribute name="class" add="o_stock_compact_actions" separator=" "/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
