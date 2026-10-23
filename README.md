@@ -7,7 +7,7 @@ Valitse Add file → Upload files.
 Vedä haluttu kansio latausalueelle.
 Paina Commit changes.
 Cloudpepper: Addons-> Add git repository
-Cloudpepperiin osoite: https://github.com/LeoHama/Leon-omat.git
+Cloudpepperiin osoite: https://github.com/LeoHama/Leon-omat
 Valitse main
 Valitse specifig add-ons
 Valitse add-on
